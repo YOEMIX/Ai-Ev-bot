@@ -19,7 +19,9 @@ dp = Dispatcher()
 dp.bot = bot
 dp.include_router(router)
 
-image_path = os.path.join('/Users/emixem/Documents/pythonprojects/Claude2try/Default_A_serene_cityscape_at_dawn_the_calm_before_the_storm_0.jpg')
+# Путь к файлу с изображением (относительно текущего каталога)
+image_path = os.path.join('images', 'Default_A_serene_cityscape_at_dawn_the_calm_before_the_storm_0.jpg')
+
 # Создание экземпляра InputFile
 photo = types.FSInputFile(image_path)
 
