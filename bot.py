@@ -37,7 +37,7 @@ async def send_welcome(message: types.Message):
             inline_keyboard=[[
                 types.InlineKeyboardButton(
                     text="Смотреть видео",
-                    url="https://youtu.be/ph1EFkuCmyo?si=vLho92dJKMknhigx"
+                    url="https://youtube.com/shorts/XySzMwLDQjY?feature=share"
                 )
             ]]
         )
