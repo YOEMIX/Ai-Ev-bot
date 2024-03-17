@@ -6,7 +6,8 @@ from aiogram.filters import Command
 from aiogram.handlers import MessageHandler
 from config import BOT_TOKEN
 from utils import process_message
-
+from keep_alive import keep_alive
+keep_alive()
 
 # Инициализация бота
 bot = Bot(token=BOT_TOKEN, parse_mode="Markdown")
