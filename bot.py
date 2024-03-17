@@ -6,8 +6,6 @@ from aiogram.filters import Command
 from aiogram.handlers import MessageHandler
 from config import BOT_TOKEN
 from utils import process_message
-from keep_alive import keep_alive
-keep_alive()
 
 # Инициализация бота
 bot = Bot(token=BOT_TOKEN, parse_mode="Markdown")
@@ -59,6 +57,9 @@ async def handle_message(message: types.Message):
 
     # Отправляем ответ пользователю
        await message.answer(response)
+    
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 if __name__ == '__main__':
     from database import create_table
